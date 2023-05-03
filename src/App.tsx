@@ -1,7 +1,12 @@
 import { ChakraProvider } from '@chakra-ui/react';
 
-function App() {
-  return <ChakraProvider>{/* App components */}</ChakraProvider>;
-}
+import { Logo } from 'components';
 
-export default App;
+export const App = () => {
+  return (
+    <ChakraProvider>
+      {/* App components */}
+      <Logo />
+    </ChakraProvider>
+  );
+};
